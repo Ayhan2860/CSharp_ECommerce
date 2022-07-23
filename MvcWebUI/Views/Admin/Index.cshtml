@@ -1,0 +1,34 @@
+@model MvcWebUI.Models.ProductListViewModel;
+@{
+    ViewData["Title"] = "Admin Page";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+ 
+<div class="text-center">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Units In Stock</th>
+                <th>
+                <a class="btn btn-sm btn-success" asp-controller="Admin" asp-action="AddProduct"  ><i class="fa fa-plus" aria-hidden="true"></i> Add Product</a>
+                 
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <td>@product.ProductName</td>
+                    <td>₺ @product.UnitPrice</td>
+                   <td>@product.UnitsInStock</td>
+                   <td><a class="btn btn-sm btn-warning" asp-controller="Admin" asp-action="UpdateProduct" asp-route-productId="@product.ProductId" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                     <td><a class="btn btn-sm btn-danger" asp-controller="Admin" asp-action="DeleteProduct" asp-route-productId="@product.ProductId" ><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+      
+</div>

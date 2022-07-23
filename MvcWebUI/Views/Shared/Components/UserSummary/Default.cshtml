@@ -1,0 +1,64 @@
+
+@model MvcWebUI.Models.UserDetailsViewModel
+
+
+         @if(!string.IsNullOrEmpty(Model.UserName))
+        {
+        <div   class="  nav-item dropdown">
+          <a class="nav-link text-white  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            User Info
+          </a>
+         
+        
+<ul style="padding: 0 !important ; width:200px !important; margin-right:25px !important" id="user" class="dropdown-menu ">
+    
+    <li>
+       
+            <div class="input-group">
+               
+                <input style="color: teal;" value="Welcome @Model.UserName" disabled class="form-control">
+                
+            </div>
+    </li>
+   
+    @if(@Model.IsAdmin)
+    {
+      <li>
+       <div class="input-group">
+               
+                <input style="color: teal;" value="Go to admin page" disabled class="form-control">
+                 <span class="input-group-text">
+                  <a asp-controller="Admin" style="color: teal ;" asp-action="Index" >
+                   <i class="fa fa-wrench" aria-hidden="true"></i>
+                  </a>
+                 </span>
+            </div>
+            
+    </li>
+    }
+
+    <li>
+       <div class="input-group log-off">
+               
+                <input style="color: teal;" value="Log Off" disabled class="form-control ">
+                 <span class="input-group-text">
+                  <a asp-controller="Account" class="log-off-a" style="color: teal ;" asp-action="LogOff" >
+                   <i class="fa fa-sign-out" aria-hidden="true"></i>
+                  </a>
+                 </span>
+            </div>
+            
+    </li>
+     
+   
+</ul>
+
+</div>
+}
+else
+{
+         <a asp-controller="Account" asp-action="Login" style="color: #008080;" class="btn btn-light ms-3" >Signin</a>
+       <a asp-controller="Account" asp-action="Register"  class="btn btn-outline-light ms-3" >Signup</a>
+}
+      
+       

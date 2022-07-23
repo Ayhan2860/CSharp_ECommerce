@@ -1,0 +1,12 @@
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/bin/Debug/net5.0/Core.deps.json
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/bin/Debug/net5.0/Core.dll
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/bin/Debug/net5.0/Core.pdb
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/Debug/net5.0/Core.csproj.AssemblyReference.cache
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/Debug/net5.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/Debug/net5.0/Core.AssemblyInfoInputs.cache
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/Debug/net5.0/Core.AssemblyInfo.cs
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/Debug/net5.0/Core.csproj.CoreCompileInputs.cache
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/Debug/net5.0/Core.dll
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/Debug/net5.0/refint/Core.dll
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/Debug/net5.0/Core.pdb
+/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/Debug/net5.0/ref/Core.dll

@@ -1,0 +1,52 @@
+@model MvcWebUI.Models.BasketSummaryViewModel
+@{
+    ViewData["Title"] = "Basket Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div> </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Basket.BasketLines)
+            {
+                <tr>
+                    <td>@item.Product.ProductName</td>
+                    <td>@item.Product.UnitPrice</td>
+                    <td>@item.Quantity</td>
+                    <td class="text-right"><a asp-controller="Basket" asp-action="Remove" asp-route-productId="@item.Product.ProductId" class="btn btn-sm btn-danger"> <span class="fw-bold">X</span>  Remove from basket </a></td>
+                </tr>
+            }
+             <tr>
+                <td></td>
+                <td></td>
+                <td class="text-right"><h3 class="text-right">Total :</h3></td>
+                <td class="text-right">
+                    <h3>
+                        <strong> ₺ @Model.Basket.Total</strong>
+                    </h3>
+                </td>
+             </tr>
+             <tr>
+                
+                 <td></td>
+                 <td></td>
+                 <td class="text-right">
+                    <a asp-controller="Product" asp-action="Index" class="btn btn-sm btn-default">
+                        Continue Shopping
+                    </a>
+                 </td>
+                 <td  class="text-right">
+                    <a style="background-color: teal;" asp-controller="Basket" asp-action="Complete" class="btn btn-sm btn-success">
+                        Go To Checkout
+                    </a>
+                 </td>
+             </tr>
+        </tbody>
+    </table>

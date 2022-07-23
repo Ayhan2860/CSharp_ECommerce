@@ -1,0 +1,29 @@
+@model MvcWebUI.Models.BasketSummaryViewModel
+
+      @if(Model.Basket.BasketLines.Count > 0)
+      {
+        <div   class="  nav-item dropdown">
+          <a class="nav-link text-white  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Your Basket
+          </a>
+          <ul style="width: 250px !important ;" class="dropdown-menu">
+            @foreach (var item in Model.Basket.BasketLines)
+            {
+                <li  class="dropdown-item " >
+                    @item.Product.ProductName
+                      <span style="background-color:teal; color:#fff; float:right" class="badge ">@item.Quantity</span> 
+                      
+                </li>
+            }
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-item" >   ₺ @Model.Basket.Total </li>
+                <li><hr class="dropdown-divider"></li>
+               <li class="input-group">
+                <span class="input-group-text" style="color:teal ; float:right; " id="basic-addon1"><i  class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                <a class="form-control" aria-disabled="true" asp-controller="Basket" asp-action="List" >Go to basket details</a>
+                </li>
+          
+            
+          </ul>
+          </div>
+      }

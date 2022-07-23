@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MvcWebUI</title>
+    <link rel="stylesheet" href="~/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/node_modules/font-awesome/css/font-awesome.css">
+
+<style>
+  nav ul 
+  {
+    width: 20%;
+    display: flex;
+    justify-content: space-around !important;
+  }
+  nav ul li .nav-link
+  {
+    color: #fff !important;
+  }
+
+  .btn-success
+  {
+     background-color: teal !important;
+  }
+
+ 
+</style>
+</head>
+
+<body >
+       <nav  style="background-color: teal;" class="navbar navbar-expand-lg ">
+  <div class="container-fluid d-flex justify-content-around">
+    <a class="navbar-brand text-white fw-bold logo" asp-controller="Product" asp-action="Index">E-Commerce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse d-flex justify-content-around   navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link active logo " aria-current="page" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+        </li>
+        
+      </ul>
+
+      <div style="display: flex; justify-content: space-around; width:25%">
+        
+         @await Component.InvokeAsync("UserSummary")
+        
+      </div>
+      
+    </div>
+  </div>
+</nav>  
+    <div style="min-height: 80vh;"  class="container mt-4">
+     
+        <div  class=" col-md-12">
+        <main role="main" class="pb-3">
+          @if(TempData["message"] != null)
+          {
+              <div id="alertTag" class="alert alert-info" role="alert">@TempData["message"]</div>
+          }
+            @RenderBody()
+
+          
+        </main>
+        </div>
+       </div>
+    </div>
+
+    <footer style="height:100px; background:teal; color:#fff" class="border-top d-flex align-items-center  footer text-muted">
+        <div class="container text-white text-center">
+            &copy; 2022 - E-Commerce - <a  asp-controller="Product" class="text-white" asp-action="Index">Products</a>
+    </div>
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+     <script src="~/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+     <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+     
+    <script>
+      function setOut(){
+          const alertDiv = document.getElementById("alertTag");
+          if(alertDiv)
+          {
+            setTimeout(()=>{
+              alertDiv.remove();
+            }, 2000)
+          }
+      }
+      setOut();
+    </script>
+   
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

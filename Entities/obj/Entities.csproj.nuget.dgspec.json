@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ayhankaraman/Projects/CSharp_ECommerce/Entities/Entities.csproj": {}
+  },
+  "projects": {
+    "/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/Core.csproj",
+        "projectName": "Core",
+        "projectPath": "/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/Core.csproj",
+        "packagesPath": "/Users/ayhankaraman/.nuget/packages/",
+        "outputPath": "/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ayhankaraman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ayhankaraman/Projects/CSharp_ECommerce/Entities/Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ayhankaraman/Projects/CSharp_ECommerce/Entities/Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "/Users/ayhankaraman/Projects/CSharp_ECommerce/Entities/Entities.csproj",
+        "packagesPath": "/Users/ayhankaraman/.nuget/packages/",
+        "outputPath": "/Users/ayhankaraman/Projects/CSharp_ECommerce/Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ayhankaraman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/Core.csproj": {
+                "projectPath": "/Users/ayhankaraman/Projects/CSharp_ECommerce/Core/Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
