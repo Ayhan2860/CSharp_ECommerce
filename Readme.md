@@ -70,10 +70,9 @@ Veritabanı tabloları için oluşturulan Varlık Katmanı.
 
    + ISession'a Serialize edilerek set edilmiştir.
    + ISession'dan Deserialize edilerek get edilmiştir.
+   
     ## Modeller
-    <details>
-    <summary>İçeriği Göster</summary>
-    ### Basket
+### Basket
 | Name              | Data Type     | Allow Nulls | Default |
 | :-----------------| :------------ | :---------- | :------ |
 | List<BasketLine>  | BasketLine    | False       |         |
@@ -84,7 +83,7 @@ Veritabanı tabloları için oluşturulan Varlık Katmanı.
 | :------------ | :------------ | :---------- | :------ |
 |  Product      | Product       | False       |         |
 | Quantity      | İnt        | False       |         |
-  </details>
+  
 </details>
 
   ## Images
