@@ -87,7 +87,7 @@ Veritabanı tabloları için oluşturulan Varlık Katmanı.
   
 </details>
 
-  ## Images
+  ## Resimler
  <details>
 <summary>İçeriği Göster</summary>
  <img width="1438" alt="Ekran Resmi 2022-07-23 16 47 52" src="https://user-images.githubusercontent.com/68536015/180611801-a1b8d0fb-6744-4597-8790-146b79c41425.png">
