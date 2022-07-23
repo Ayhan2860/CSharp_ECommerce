@@ -76,14 +76,14 @@ Veritabanı tabloları için oluşturulan Varlık Katmanı.
 ### Basket
 | Name              | Data Type     | Allow Nulls | Default |
 | :-----------------| :------------ | :---------- | :------ |
-| List<BasketLine>  | BasketLine    | False       |         |
+| BasketLine        | List          | False       |         |
 | Total             | decimal       | False       |         |
 
 ### BasketLine
 | Name          | Data Type     | Allow Nulls | Default |
 | :------------ | :------------ | :---------- | :------ |
 |  Product      | Product       | False       |         |
-| Quantity      | İnt        | False       |         |
+| Quantity      | İnt           | False       |         |
   
 </details>
 
