@@ -53,12 +53,15 @@ Veritabanı tabloları için oluşturulan Varlık Katmanı.
   </details>
 
   ## Kullanıcı İşlemleri
-  Microsoft.AspNetCore.Identity.EntityFrameworkCore ile kullanılmıştır.
+  <details>
+    <summary>İçeriği Göster</summary>
+    
+### Microsoft.AspNetCore.Identity.EntityFrameworkCore ile kullanılmıştır.
    + DbContext
     - + CustomIdentityDbContext
     - + CustomIdentityUser
     - + CustomIdentityRole
-
+</details>
 
   ## Sepet İşlemeleri
   <details>
