@@ -57,11 +57,11 @@ Veritabanı tabloları için oluşturulan Varlık Katmanı.
     <summary>İçeriği Göster</summary>
 
 ### Microsoft.AspNetCore.Identity.EntityFrameworkCore ile kullanılmıştır.
-   + DbContext
-   
-    + CustomIdentityDbContext
-    + CustomIdentityUser
-    + CustomIdentityRole
+  + DbContext
+     + CustomIdentityDbContext
+     + CustomIdentityUser
+     + CustomIdentityRole
+
 </details>
 
   ## Sepet İşlemeleri
