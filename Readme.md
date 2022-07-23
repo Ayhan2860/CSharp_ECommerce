@@ -71,7 +71,8 @@ Veritabanı tabloları için oluşturulan Varlık Katmanı.
    + ISession'a Serialize edilerek set edilmiştir.
    + ISession'dan Deserialize edilerek get edilmiştir.
    
-    ## Modeller
+  ## Modeller
+  
 ### Basket
 | Name              | Data Type     | Allow Nulls | Default |
 | :-----------------| :------------ | :---------- | :------ |
