@@ -7,7 +7,7 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("Server=localhost; Uid=root; Pwd=Burcum2855; Database=Northwind");
+            optionsBuilder.UseMySQL("Server=localhost; Uid=root; Pwd=<Password>; Database=Northwind");
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
