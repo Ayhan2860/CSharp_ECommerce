@@ -41,7 +41,7 @@ namespace MvcWebUI
             services.AddScoped<ICategoryDal, EfCategoryDal>();
             services.AddSingleton<IBasketService, BasketManager>();
             services.AddSingleton<IBasketSessionService, BasketSessionService>();
-            services.AddDbContext<CustomIdentityDbContext>(options => options.UseMySQL("Server=localhost; Uid=root; Pwd=Burcum2855; Database=identity_user",
+            services.AddDbContext<CustomIdentityDbContext>(options => options.UseMySQL("<DatabaseConnetionString>",
             options =>options.CommandTimeout(180000)
             ));
             services.AddIdentity<CustomIdentityUser, CustomIdentityRole>()
